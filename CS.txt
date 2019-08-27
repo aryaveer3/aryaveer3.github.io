@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>comp_page</title>
+	<link rel="stylesheet" href="all_css.css">
+</head>
+
+<body class="bs">
+    <h1 class="heading">Computer Science</h1>
+    <p class="content">WHAT IS COMPUTER SCIENCE ENGINEERING ?
+Computer science engineering (CSE) is one of the
+ popular courses among engineering aspirants which 
+focuses on the basic elements of computer programming and
+ networking. Students pursuing computer science courses will gain
+ knowledge of design, implementation and management of information 
+system of both hardware and software. Going by the name,
+ CSE course deals primarily with the theory of computation
+ and design of computational systems. The course is offered 
+across the globe in technical institutions at undergraduate as
+ well as postgraduate levels awarding B.Tech and M.tech degrees, 
+respectively.</p>
+	
+
+</body>
+
+</html>

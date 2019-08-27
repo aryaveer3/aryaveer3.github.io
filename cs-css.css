@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bs{
+	  /* Full height */
+ 
+  background-image: url("cs.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.heading{
+	font-size: 50px; 
+	color: aliceblue;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+}
+.content{
+	font-family: cursive;
+	font-size: 30px; 
+	color: aliceblue;
+}
+
+body {
+  background-color: #0000ff;
+}
