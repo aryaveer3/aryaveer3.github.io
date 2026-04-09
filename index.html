@@ -4,43 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aryaveer Bajpai – Senior iOS Engineer</title>
-  <meta name="description" content="Senior iOS Engineer with 5+ years of experience building scalable, high-performance apps using Swift and SwiftUI." />
+  <meta name="description" content="Senior iOS Engineer with 5+ years building scalable, high-performance apps using Swift and SwiftUI." />
   <meta name="author" content="Aryaveer Bajpai" />
-
-  <!-- Open Graph -->
   <meta property="og:title" content="Aryaveer Bajpai – Senior iOS Engineer" />
   <meta property="og:description" content="Senior iOS Engineer specialising in Swift, SwiftUI, enterprise offline-first architecture, and AI integrations." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aryaveer3.github.io" />
 
-  <!-- Fonts -->
+  <!-- Fonts: Inter + Syne -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@400..800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+<!-- Custom cursor -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
 
 <!-- ══════════════════════════════════════════
      NAVBAR
 ════════════════════════════════════════════ -->
 <nav id="navbar">
   <a href="#hero" class="nav-logo">&lt;<span>AB</span>/&gt;</a>
-
   <ul class="nav-links">
     <li><a href="#about"      data-section="about">About</a></li>
     <li><a href="#experience" data-section="experience">Experience</a></li>
     <li><a href="#skills"     data-section="skills">Skills</a></li>
     <li><a href="#contact"    data-section="contact" class="nav-cta">Contact</a></li>
   </ul>
-
   <button class="hamburger" id="hamburger" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
+  <div id="progress-bar"></div>
 </nav>
 
-<!-- Mobile nav -->
 <nav class="mobile-nav" id="mobile-nav">
   <a href="#about">About</a>
   <a href="#experience">Experience</a>
@@ -52,8 +52,13 @@
      HERO
 ════════════════════════════════════════════ -->
 <section id="hero">
-  <div class="container hero-inner">
+  <!-- Floating code badges -->
+  <div class="code-float">swift async/await</div>
+  <div class="code-float">@MainActor</div>
+  <div class="code-float">ObservableObject</div>
+  <div class="code-float">@Published</div>
 
+  <div class="container hero-inner">
     <div class="hero-badge reveal">
       <span class="dot"></span>
       Open to opportunities
@@ -80,40 +85,38 @@
 
     <div class="hero-stats reveal">
       <div class="stat-item">
-        <span class="stat-number">5<span>+</span></span>
+        <span class="stat-number counter" data-value="5" data-suffix="+">0<span>+</span></span>
         <span class="stat-label">Years Experience</span>
       </div>
       <div class="stat-item">
-        <span class="stat-number">25M<span>+</span></span>
+        <span class="stat-number counter" data-value="25" data-suffix="M+">0<span>M+</span></span>
         <span class="stat-label">Records Handled</span>
       </div>
       <div class="stat-item">
-        <span class="stat-number">53<span>%</span></span>
+        <span class="stat-number counter" data-value="53" data-suffix="%">0<span>%</span></span>
         <span class="stat-label">Sync Performance Boost</span>
       </div>
       <div class="stat-item">
-        <span class="stat-number">100K<span>+</span></span>
+        <span class="stat-number counter" data-value="100" data-suffix="K+">0<span>K+</span></span>
         <span class="stat-label">Sync Records / Run</span>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════
-     ABOUT
+     ABOUT – BENTO GRID
 ════════════════════════════════════════════ -->
 <section id="about" class="section">
   <div class="container">
     <span class="section-label reveal">About Me</span>
     <h2 class="section-title reveal">The Engineer <span>Behind the Code</span></h2>
 
-    <div class="about-grid">
-      <div class="about-photo-wrap reveal">
-        <div class="about-photo-placeholder">👨‍💻</div>
-      </div>
+    <div class="bento-grid">
 
-      <div class="about-text reveal reveal-delay-1">
+      <!-- Bio card (2×2) -->
+      <div class="bento-card bento-bio reveal">
+        <span class="bento-label">// about</span>
         <p>
           I'm a <strong>Senior iOS Engineer</strong> with over <strong>5 years of experience</strong>
           designing and shipping scalable, enterprise-grade iOS applications using
@@ -123,15 +126,9 @@
         <p>
           Currently at <strong>McGraw Hill</strong>, I architect iOS platforms that stay performant
           and reliable across distributed enterprise environments — from redesigning Salesforce sync
-          pipelines with Swift Concurrency to integrating AI-powered summarisation via OpenAI and
-          Hugging Face APIs. I care deeply about code quality, system design, and delivering
-          experiences that just <em>work</em>.
+          pipelines with Swift Concurrency to integrating AI-powered summarisation via
+          <strong>OpenAI and Hugging Face APIs</strong>.
         </p>
-        <p>
-          I hold a degree from <strong>Dr. A.P.J. Abdul Kalam Technical University</strong>
-          and have been building for Apple platforms since 2021.
-        </p>
-
         <div class="about-links">
           <a href="https://linkedin.com/in/aryaveer-bajpai" target="_blank" rel="noopener" class="about-link">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
@@ -147,12 +144,65 @@
           </a>
         </div>
       </div>
+
+      <!-- Status -->
+      <div class="bento-card bento-status reveal reveal-delay-1">
+        <div class="status-dot-wrap">
+          <div class="status-dot"></div>
+          <span class="status-title">Available</span>
+        </div>
+        <span class="status-sub">Open to new roles</span>
+      </div>
+
+      <!-- Location -->
+      <div class="bento-card bento-avail reveal reveal-delay-2">
+        <span class="bento-card-icon">🌏</span>
+        <span class="bento-card-title">Location</span>
+        <span class="bento-card-value">India</span>
+        <span class="bento-card-sub">Remote / Hybrid</span>
+      </div>
+
+      <!-- Tech stack (2×2) -->
+      <div class="bento-card bento-stack reveal reveal-delay-1">
+        <span class="stack-label">// core stack</span>
+        <div class="stack-pills">
+          <span class="stack-pill accent">Swift</span>
+          <span class="stack-pill accent">SwiftUI</span>
+          <span class="stack-pill accent">UIKit</span>
+          <span class="stack-pill">Core Data</span>
+          <span class="stack-pill">Combine</span>
+          <span class="stack-pill">async/await</span>
+          <span class="stack-pill">MVVM</span>
+          <span class="stack-pill">XCTest</span>
+          <span class="stack-pill">Firebase</span>
+          <span class="stack-pill">OpenAI</span>
+          <span class="stack-pill">Xcode</span>
+          <span class="stack-pill">Git</span>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="bento-card bento-loc reveal">
+        <span class="bento-card-icon">🎓</span>
+        <span class="bento-card-title">Education</span>
+        <span class="bento-card-value">B.Tech</span>
+        <span class="bento-card-sub">AKTU · 2021</span>
+      </div>
+
+      <!-- Platform -->
+      <div class="bento-card bento-degree reveal reveal-delay-1">
+        <span class="bento-card-icon">🍎</span>
+        <span class="bento-card-title">Platform</span>
+        <span class="bento-card-value">Apple Ecosystem</span>
+        <span class="bento-card-sub">iOS · iPadOS · macOS</span>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════
-     EXPERIENCE
+     EXPERIENCE – CONNECTED TIMELINE
 ════════════════════════════════════════════ -->
 <section id="experience" class="section">
   <div class="container">
@@ -162,7 +212,9 @@
     <div class="timeline">
 
       <!-- McGraw Hill -->
-      <div class="exp-card reveal">
+      <div class="timeline-slide" data-delay="0">
+        <div class="timeline-node active"></div>
+        <div class="timeline-connector"></div>
         <div class="exp-header">
           <div>
             <div class="exp-role">Senior Associate – iOS Developer</div>
@@ -181,7 +233,9 @@
       </div>
 
       <!-- Unthinkable – Associate -->
-      <div class="exp-card reveal reveal-delay-1">
+      <div class="timeline-slide" data-delay="120">
+        <div class="timeline-node"></div>
+        <div class="timeline-connector"></div>
         <div class="exp-header">
           <div>
             <div class="exp-role">Associate – Software Engineering</div>
@@ -198,7 +252,9 @@
       </div>
 
       <!-- Unthinkable – Jr. Associate -->
-      <div class="exp-card reveal reveal-delay-2">
+      <div class="timeline-slide" data-delay="240">
+        <div class="timeline-node"></div>
+        <div class="timeline-connector"></div>
         <div class="exp-header">
           <div>
             <div class="exp-role">Jr. Associate – Software Engineering</div>
@@ -218,15 +274,77 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     SKILLS
+     SKILLS – MARQUEE + CATEGORIES
 ════════════════════════════════════════════ -->
 <section id="skills" class="section">
   <div class="container">
     <span class="section-label reveal">Expertise</span>
     <h2 class="section-title reveal">Skills &amp; <span>Technologies</span></h2>
+  </div>
 
-    <div class="skills-grid">
+  <!-- Marquee rows (full bleed) -->
+  <div class="marquee-wrap">
+    <!-- Row 1 → left -->
+    <div class="marquee-track">
+      <span class="marquee-pill accent">Swift</span>
+      <span class="marquee-pill accent">SwiftUI</span>
+      <span class="marquee-pill accent">UIKit</span>
+      <span class="marquee-pill">Objective-C</span>
+      <span class="marquee-pill">Core Data</span>
+      <span class="marquee-pill">Combine</span>
+      <span class="marquee-pill accent">async/await</span>
+      <span class="marquee-pill">Core Animation</span>
+      <span class="marquee-pill">Core Graphics</span>
+      <span class="marquee-pill accent">Xcode</span>
+      <span class="marquee-pill">Instruments</span>
+      <span class="marquee-pill">Firebase Crashlytics</span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-pill accent">Swift</span>
+      <span class="marquee-pill accent">SwiftUI</span>
+      <span class="marquee-pill accent">UIKit</span>
+      <span class="marquee-pill">Objective-C</span>
+      <span class="marquee-pill">Core Data</span>
+      <span class="marquee-pill">Combine</span>
+      <span class="marquee-pill accent">async/await</span>
+      <span class="marquee-pill">Core Animation</span>
+      <span class="marquee-pill">Core Graphics</span>
+      <span class="marquee-pill accent">Xcode</span>
+      <span class="marquee-pill">Instruments</span>
+      <span class="marquee-pill">Firebase Crashlytics</span>
+    </div>
+    <!-- Row 2 ← right -->
+    <div class="marquee-track reverse">
+      <span class="marquee-pill accent">MVVM</span>
+      <span class="marquee-pill">SOLID</span>
+      <span class="marquee-pill">Offline-First</span>
+      <span class="marquee-pill">Modular Architecture</span>
+      <span class="marquee-pill">XCTest</span>
+      <span class="marquee-pill">XCUITest</span>
+      <span class="marquee-pill">REST APIs</span>
+      <span class="marquee-pill accent">OpenAI API</span>
+      <span class="marquee-pill">Hugging Face</span>
+      <span class="marquee-pill">Git</span>
+      <span class="marquee-pill">CI/CD</span>
+      <span class="marquee-pill">Agile / Scrum</span>
+      <!-- duplicate -->
+      <span class="marquee-pill accent">MVVM</span>
+      <span class="marquee-pill">SOLID</span>
+      <span class="marquee-pill">Offline-First</span>
+      <span class="marquee-pill">Modular Architecture</span>
+      <span class="marquee-pill">XCTest</span>
+      <span class="marquee-pill">XCUITest</span>
+      <span class="marquee-pill">REST APIs</span>
+      <span class="marquee-pill accent">OpenAI API</span>
+      <span class="marquee-pill">Hugging Face</span>
+      <span class="marquee-pill">Git</span>
+      <span class="marquee-pill">CI/CD</span>
+      <span class="marquee-pill">Agile / Scrum</span>
+    </div>
+  </div>
 
+  <!-- Category grid -->
+  <div class="container">
+    <div class="skills-categories">
       <div class="skill-category reveal">
         <div class="skill-cat-label"><span class="cat-icon">⌨️</span> Languages</div>
         <div class="skill-tags">
@@ -235,7 +353,6 @@
           <span class="skill-tag">Python</span>
         </div>
       </div>
-
       <div class="skill-category reveal reveal-delay-1">
         <div class="skill-cat-label"><span class="cat-icon">📦</span> Frameworks</div>
         <div class="skill-tags">
@@ -247,28 +364,24 @@
           <span class="skill-tag">Core Graphics</span>
         </div>
       </div>
-
       <div class="skill-category reveal reveal-delay-2">
         <div class="skill-cat-label"><span class="cat-icon">🏗️</span> Architecture</div>
         <div class="skill-tags">
           <span class="skill-tag primary">MVVM</span>
           <span class="skill-tag">SOLID</span>
-          <span class="skill-tag">Modular Architecture</span>
+          <span class="skill-tag">Modular</span>
           <span class="skill-tag">Offline-First</span>
-          <span class="skill-tag">Scalable Systems</span>
         </div>
       </div>
-
       <div class="skill-category reveal">
         <div class="skill-cat-label"><span class="cat-icon">🌐</span> Networking</div>
         <div class="skill-tags">
           <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">HTTP Protocols</span>
+          <span class="skill-tag">HTTP</span>
           <span class="skill-tag">JSON</span>
-          <span class="skill-tag">Swift Concurrency</span>
+          <span class="skill-tag">async/await</span>
         </div>
       </div>
-
       <div class="skill-category reveal reveal-delay-1">
         <div class="skill-cat-label"><span class="cat-icon">🧪</span> Testing</div>
         <div class="skill-tags">
@@ -278,7 +391,6 @@
           <span class="skill-tag">UI Testing</span>
         </div>
       </div>
-
       <div class="skill-category reveal reveal-delay-2">
         <div class="skill-cat-label"><span class="cat-icon">🛠️</span> Tools</div>
         <div class="skill-tags">
@@ -289,7 +401,6 @@
           <span class="skill-tag">Firebase Crashlytics</span>
         </div>
       </div>
-
       <div class="skill-category reveal">
         <div class="skill-cat-label"><span class="cat-icon">🤖</span> AI Integration</div>
         <div class="skill-tags">
@@ -297,17 +408,15 @@
           <span class="skill-tag">Hugging Face</span>
         </div>
       </div>
-
       <div class="skill-category reveal reveal-delay-1">
         <div class="skill-cat-label"><span class="cat-icon">⚡</span> Practices</div>
         <div class="skill-tags">
           <span class="skill-tag">Agile</span>
           <span class="skill-tag">Scrum</span>
           <span class="skill-tag">Code Review</span>
-          <span class="skill-tag">Performance Profiling</span>
+          <span class="skill-tag">Profiling</span>
         </div>
       </div>
-
       <div class="skill-category reveal reveal-delay-2">
         <div class="skill-cat-label"><span class="cat-icon">📱</span> Platforms</div>
         <div class="skill-tags">
@@ -316,7 +425,6 @@
           <span class="skill-tag">iPadOS</span>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -336,9 +444,7 @@
           contract work, or a conversation about iOS architecture and engineering.
           Feel free to reach out through any of the channels below.
         </p>
-
         <div class="contact-cards">
-
           <a href="mailto:aryaveerbajpai@gmail.com" class="contact-card">
             <div class="contact-icon">📧</div>
             <div class="contact-info">
@@ -346,7 +452,6 @@
               <span class="contact-value">aryaveerbajpai@gmail.com</span>
             </div>
           </a>
-
           <a href="tel:+919807469538" class="contact-card">
             <div class="contact-icon">📱</div>
             <div class="contact-info">
@@ -354,7 +459,6 @@
               <span class="contact-value">+91-9807469538</span>
             </div>
           </a>
-
           <a href="https://linkedin.com/in/aryaveer-bajpai" target="_blank" rel="noopener" class="contact-card">
             <div class="contact-icon">💼</div>
             <div class="contact-info">
@@ -362,7 +466,6 @@
               <span class="contact-value">linkedin.com/in/aryaveer-bajpai</span>
             </div>
           </a>
-
           <a href="https://github.com/aryaveer3" target="_blank" rel="noopener" class="contact-card">
             <div class="contact-icon">🐙</div>
             <div class="contact-info">
@@ -370,7 +473,6 @@
               <span class="contact-value">github.com/aryaveer3</span>
             </div>
           </a>
-
         </div>
       </div>
 
@@ -389,7 +491,6 @@
           Connect on LinkedIn
         </a>
       </div>
-
     </div>
   </div>
 </section>
